@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #0f172a;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: #1e293b;
+}
+
+section {
+    padding: 40px;
+}
+
+h2 {
+    color: #38bdf8;
+}
+
+.proyecto {
+    background-color: #1e293b;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
