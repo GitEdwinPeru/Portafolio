@@ -1,27 +1,190 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
-    background-color: #0f172a;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #020617);
     color: white;
 }
 
-header {
-    text-align: center;
-    padding: 50px;
-    background-color: #1e293b;
+/* NAVBAR */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    backdrop-filter: blur(10px);
+    background: rgba(2, 6, 23, 0.7);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    z-index: 1000;
 }
 
-section {
-    padding: 40px;
-}
-
-h2 {
+nav h2 {
     color: #38bdf8;
 }
 
-.proyecto {
-    background-color: #1e293b;
-    padding: 20px;
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: #cbd5f5;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: radial-gradient(circle at top, #1e293b, #020617);
+}
+
+header h1 {
+    font-size: 3rem;
+    background: linear-gradient(90deg, #38bdf8, #6366f1);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+header p {
+    margin: 15px 0;
+    color: #94a3b8;
+}
+
+/* BOTON */
+.btn {
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #38bdf8, #6366f1);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* SECCIONES */
+section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #38bdf8;
+}
+
+/* PROYECTOS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: rgba(30, 41, 59, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border: 1px solid #38bdf8;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #94a3b8;
+}
+
+.card a {
+    display: inline-block;
     margin-top: 15px;
-    border-radius: 10px;
+    color: #38bdf8;
+}
+
+/* HABILIDADES */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    background: rgba(56, 189, 248, 0.1);
+    padding: 10px 18px;
+    border-radius: 30px;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+/* CONTACTO */
+#contacto {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(30, 41, 59, 0.5);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.contact-text {
+    margin-bottom: 20px;
+    color: #94a3b8;
+}
+
+.contact-info p {
+    margin: 8px 0;
+    font-size: 1.05rem;
+}
+
+.contact-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
 }

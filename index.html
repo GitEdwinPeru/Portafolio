@@ -2,49 +2,119 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edwin Benavides | Portafolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
+    <!-- NAVBAR -->
+    <nav>
+        <h2>Edwin</h2>
+        <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
     <header>
-        <h1>Hola, soy Edwin Benavides</h1>
-        <p>Analista de Datos en formación</p>
+        <h1>Transformo datos en decisiones </h1>
+        <p>Egresado de Tecnico Ingeniería de Software con enfoque en Inteligencia Artificial,
+            especializándome en análisis de datos y visualización.</p>
+    
+        <div style="margin-top:20px;">
+            <a href="#proyectos" class="btn">Ver proyectos</a>
+            <a href="#" class="btn">Descargar CV</a>
+        </div>
     </header>
 
+    <!-- SOBRE MI -->
     <section id="sobre-mi">
         <h2>Sobre mí</h2>
         <p>
-            Me especializo en análisis de datos usando Python, SQL y Power BI.
-            Me interesa transformar datos en decisiones.
+            Soy egresado de Ingeniería de Software con formación en Inteligencia Artificial,
+            enfocado en el análisis de datos para generar insights de negocio.
+            
+            Tengo experiencia trabajando con Python, SQL y herramientas de visualización
+            como Power BI, aplicando técnicas de limpieza, exploración y modelado de datos.
+            
+            Me interesa desarrollarme como Analista de Datos en entornos donde pueda
+            aportar valor mediante el uso estratégico de la información.
         </p>
+        <p style="margin-top:20px; font-style: italic; color:#94a3b8;">
+            "Me enfoco en convertir datos en decisiones que generen impacto real en el negocio."
+        </p>
+        <p style="margin-top:20px; color:#38bdf8;">
+            📊 +1 proyecto de análisis desarrollado
+            </p>
     </section>
 
+    <!-- PROYECTOS -->
     <section id="proyectos">
         <h2>Proyectos</h2>
 
-        <div class="proyecto">
-            <h3>Proyecto 1 - Análisis de Datos</h3>
-            <p>Análisis exploratorio de un dataset.</p>
-            <a href="#">Ver en GitHub</a>
-        </div>
+        <div class="grid">
 
+            <div class="card">
+                <h3>Análisis de Ventas</h3>
+                <p>
+                    Identifiqué tendencias de crecimiento y productos más rentables,
+                    permitiendo optimizar la toma de decisiones comerciales.
+                </p>
+                <a href="https://github.com/GitEdwinPeru">Ver en GitHub</a>
+            </div>
+
+        </div>
     </section>
 
+    <!-- HABILIDADES -->
     <section id="habilidades">
         <h2>Habilidades</h2>
-        <ul>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Power BI</li>
-            <li>Excel</li>
-        </ul>
+        <div class="skills">
+            <span>Python (Pandas, NumPy)</span>
+            <span>SQL (Consultas y análisis)</span>
+            <span>Power BI (Dashboards)</span>
+            <span>Excel Avanzado</span>
+            <span>Machine Learning básico</span>
+        </div>
     </section>
 
+    <!-- CONTACTO -->
     <section id="contacto">
         <h2>Contacto</h2>
-        <p>Email: tuemail@gmail.com</p>
+    
+        <div class="contact-container">
+    
+            <p class="contact-text">
+                Estoy disponible para oportunidades como Analista de Datos Junior.
+            </p>
+    
+            <div class="contact-info">
+                <p>📧 benavidesbrayan701@gmail.com</p>
+                <p>📱 +51 902 354 183</p>
+            </div>
+    
+            <div class="contact-buttons">
+                <a href="https://www.linkedin.com/feed/" target="_blank" class="btn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+    
+                <a href="https://github.com/GitEdwinPeru" target="_blank" class="btn">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <p style="margin-top:20px; font-size:0.9rem; color:#64748b;">
+                    Respuesta en menos de 24 horas 
+                    </p>
+            </div>
+    
+        </div>
     </section>
 
+    <script src="script.js"></script>
 </body>
 </html>
